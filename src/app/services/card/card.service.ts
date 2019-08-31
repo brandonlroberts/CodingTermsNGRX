@@ -10,7 +10,7 @@ import { catchError, tap } from 'rxjs/operators';
 
 export class CardService {
   [x: string]: any;
-  private cardsUrl = 'https://localhost:44333/api/cards/';
+  private cardsUrl = 'https://brandonsgenericcore22webapiefcore.azurewebsites.net/api/cards';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
