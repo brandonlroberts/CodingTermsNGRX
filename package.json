@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.3",
     "@ng-bootstrap/ng-bootstrap": "^5.1.0",
     "@ngrx/store": "^8.3.0",
+    "@ngrx/store-devtools": "^8.3.0",
     "@types/jquery": "^3.3.31",
     "bootstrap": "^4.3.1",
     "rxjs": "~6.4.0",

@@ -1,5 +1,5 @@
 <div class="card-columns">
-  <div class="card" *ngFor="let card of cards">
+  <div class="card" *ngFor="let card of cards$ | async">
     <div class="card-body">
       <h5 class="card-title">{{ card.cardHeader}}</h5>
       <p class="card-text">{{ card.cardText }}</p>
@@ -30,12 +30,12 @@
             <div class="container">
                 <div class="row">
                   <div class="col-sm">
-                      <button class="btn btn-sm btn-danger float-left" (click)="deleteCard(card)">Delete Card</button>
+                      <button class="btn btn-sm btn-danger float-left" (click)="deleteCard(card.id)">Delete Card</button>
                   </div>
                   <div class="col-sm">
                   </div>
                   <div class="col-sm">
-                      <button class="btn btn-sm btn-outline-success float-right" (click)="editCard(card)">Update Card</button>
+                      <!-- <button class="btn btn-sm btn-outline-success float-right" (click)="editCard(card)">Update Card</button> -->
                     </div>
                 </div>
               </div>
